@@ -2,6 +2,9 @@
 
 > 一个Vue集成[PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)图片预览插件
 
+![](https://img.shields.io/npm/dm/vue-preview.svg)
+![](https://img.shields.io/npm/v/vue-preview.svg)
+
 ## Requirements
 
 [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
@@ -54,7 +57,9 @@ export default {
 
 ### Mothods
 
-#### $preview.open(index, list, options)
+插件提供以下两个方法,```vm```代表组件实例
+
+#### vm.$preview.open(index, list, options)
 
 参数说明：
 
@@ -64,7 +69,7 @@ export default {
 | list      |图片列表       |   Array  |    是
 | options   |预览插件的配置选项（[参考PhotoSwipe配置](http://photoswipe.com/documentation/options.html)）  |  Object  |    否
 
-#### $preview.close()
+#### vm.$preview.close()
 
 
 ## License

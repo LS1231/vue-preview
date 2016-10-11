@@ -14,6 +14,11 @@ npm i vue-preview -S
 
 ## Usage
 
+使用须知：
+
+* 插件目前仅支持vue2.0以上版本
+* img标签上的class不能去掉
+
 ### Install plugin
 
 ``` javascript
@@ -23,9 +28,9 @@ Vue.use(VuePreview)
 
 ### Examples
 
-``` vue
+```
 <template>
-  <img v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)">
+  <img class="preview-img" v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)">
 </template>
 
 <script>
@@ -52,14 +57,12 @@ export default {
 #### $preview.open(index, list, options)
 
 参数说明：
-| 参数        | 说明   |  类型  |  必需
-| :----:    | :----:   | :----:  | :----:
-| index     | 当前图片的索引值 |   Number     |    是
-| list        |   图片列表   |   Array   |    是
-| options        |    预览插件的配置选项（[参考PhotoSwipe配置](http://photoswipe.com/documentation/options.html)）    |  Object  |    否
 
-
-
+| 参数  | 说明  |  类型  |  必需
+| :--: | :--: | :--:  | :--:
+| index     |当前图片的索引值|   Number |    是
+| list      |图片列表       |   Array  |    是
+| options   |预览插件的配置选项（[参考PhotoSwipe配置](http://photoswipe.com/documentation/options.html)）  |  Object  |    否
 
 #### $preview.close()
 

@@ -1,9 +1,8 @@
 {
   "name": "vue-preview",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "liusong <347139089@qq.com>",
-  "private": true,
+  "description": "A Vue integration PhotoSwipe image preview plugin",
+  "main": "src/plugins/preview/index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -12,9 +11,23 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LS1231/vue-preview.git"
+  },
+  "keywords": [
+    "vue",
+    "preview",
+    "photoswipe"
+  ],
+  "author": "LiuSong [347139089@qq.com] (http://blog.liusong.vip/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LS1231/vue-preview/issues"
+  },
+  "homepage": "https://github.com/LS1231/vue-preview#readme",
   "dependencies": {
-    "photoswipe": "^4.1.1",
-    "vue": "^2.0.1"
+    "photoswipe": "^4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -66,6 +79,7 @@
     "ora": "^0.3.0",
     "shelljs": "^0.7.4",
     "url-loader": "^0.5.7",
+    "vue": "^2.0.1",
     "vue-loader": "^9.4.0",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.2",

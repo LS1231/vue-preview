@@ -81,7 +81,7 @@
         let options = Object.assign({
           index: index,
           getThumbBoundsFn (index) {
-            let thumbnail = document.querySelectorAll('img')[index]
+            let thumbnail = document.querySelectorAll('.preview-img')[index]
             let pageYScroll = window.pageYOffset || document.documentElement.scrollTop
             let rect = thumbnail.getBoundingClientRect()
             return {x: rect.left, y: rect.top + pageYScroll, w: rect.width}

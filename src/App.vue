@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)">
+    <img class="preview-img" v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)">
   </div>
 </template>
 

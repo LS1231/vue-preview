@@ -52,11 +52,11 @@ export default {
 #### $preview.open(index, list, options)
 
 参数说明：
-| 参数        | 说明   |  类型  |  必需  |
-| :----:    | :----:   | :----:  | :----:  |
-| index     | 当前图片的索引值 |   Number     |    是    |
-| list        |   图片列表   |   Array   |    是    |
-| options        |    预览插件的配置选项（[参考PhotoSwipe配置](http://photoswipe.com/documentation/options.html)）    |  Object  |    否    |
+| 参数        | 说明   |  类型  |  必需
+| :----:    | :----:   | :----:  | :----:
+| index     | 当前图片的索引值 |   Number     |    是
+| list        |   图片列表   |   Array   |    是
+| options        |    预览插件的配置选项（[参考PhotoSwipe配置](http://photoswipe.com/documentation/options.html)）    |  Object  |    否
 
 
 

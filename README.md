@@ -22,6 +22,15 @@ npm i vue-preview -S
 * 插件目前仅支持vue2.0以上版本
 * img标签上的class不能去掉
 
+如果你是使用vue-cli生成的项目，可能需要你修改`webpack.base.conf.js`文件中的loaders，添加一个loader。
+原因：插件编写中使用了es6的语法，需要进行代码编译
+``` javascript
+{
+    test: /vue-preview.src.*?js$/,
+    loader: 'babel'
+}
+```
+
 ### Install plugin
 
 ``` javascript

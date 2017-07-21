@@ -69,6 +69,29 @@
 <script>
   import PhotoSwipe from 'photoswipe/dist/photoswipe'
   import UI from 'photoswipe/dist/photoswipe-ui-default'
+
+function closest(el, fn) {
+    return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+};
+
+function onThumbnailsClick(e) {
+    e = e || window.event
+    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+    var eTarget = e.target || e.srcElement; // srcElement非标准
+
+     // find root element of slide
+    var clickedListItem = closest(eTarget, function(el) {
+        return (el.tagName && el.className.indexOf('previewImgWrap') !== -1);
+    });
+
+    if(!clickedListItem) {
+        return;
+    }else{
+        return clickedListItem
+    }
+}
+
   export default {
     methods: {
       open (index, list, params = {
@@ -77,11 +100,13 @@
         history: false,
         shareEl: false,
         tapToClose: true
-      }) {
+      }, event) {
+          let clickedListItem = onThumbnailsClick(event)
+          console.log(clickedListItem);
         let options = Object.assign({
           index: index,
           getThumbBoundsFn (index) {
-            let thumbnail = document.querySelectorAll('.preview-img')[index]
+            let thumbnail = clickedListItem ? clickedListItem.querySelectorAll('.preview-img')[0] : document.querySelectorAll('.preview-img')[index]
             let pageYScroll = window.pageYOffset || document.documentElement.scrollTop
             let rect = thumbnail.getBoundingClientRect()
             return {x: rect.left, y: rect.top + pageYScroll, w: rect.width}
@@ -92,7 +117,7 @@
       },
       close () {
         this.photoswipe.close()
-      }
+      },
     }
   }
 </script>

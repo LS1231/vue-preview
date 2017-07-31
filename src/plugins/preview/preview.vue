@@ -69,6 +69,8 @@
 <script>
 import PhotoSwipe from 'photoswipe/dist/photoswipe'
 import UI from 'photoswipe/dist/photoswipe-ui-default'
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
 
 function closest(el, fn) {
     return el && (fn(el) ? el : closest(el.parentNode, fn))
@@ -120,8 +122,3 @@ export default {
     }
 }
 </script>
-
-<style>
-@import '~photoswipe/dist/photoswipe.css';
-@import '~photoswipe/dist/default-skin/default-skin.css';
-</style>

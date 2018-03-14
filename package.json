@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/LS1231/vue-preview#readme",
   "dependencies": {
-    "photoswipe": "^4.1.2",
-    "vue": "^2.5.13"
+    "photoswipe": "^4.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -35,6 +34,7 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "url-loader": "^0.5.7",
+    "vue": "^2.5.13",
     "vue-loader": "^14.1.1",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^4.0.1",

@@ -6,3 +6,5 @@ npm-debug.log
 test/unit/coverage
 test/e2e/reports
 selenium-debug.log
+.idea/workspace.xml
+.idea/misc.xml

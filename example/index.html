@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="../dist/vue-preview.min.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #app {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    h5 {
+      margin: 40px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <h1>Vue Preview</h1>
+  <div>
+    <h5>Gallery one</h5>
+    <vue-preview :slides="slide1" @close="handleClose"></vue-preview>
+  </div>
+  <div>
+    <h5>Gallery two</h5>
+    <vue-preview :slides="slide2" @close="handleClose"></vue-preview>
+  </div>
+</div>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data () {
+      return {
+        slide1: [
+          {
+            src: 'https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_b.jpg',
+            msrc: 'https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg',
+            alt: 'picture1',
+            title: 'Image Caption 1',
+            w: 600,
+            h: 400
+          },
+          {
+            src: 'https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg',
+            msrc: 'https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg',
+            alt: 'picture2',
+            title: 'Image Caption 2',
+            w: 1200,
+            h: 900
+          }
+        ],
+        slide2: [
+          {
+            src: 'https://farm4.staticflickr.com/3894/15008518202_b016d7d289_b.jpg',
+            msrc: 'https://farm4.staticflickr.com/3894/15008518202_b016d7d289_m.jpg',
+            alt: 'picture1',
+            title: 'Image Caption 1',
+            w: 1200,
+            h: 900
+          },
+          {
+            src: 'https://farm4.staticflickr.com/3920/15008465772_383e697089_b.jpg',
+            msrc: 'https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg',
+            alt: 'picture2',
+            title: 'Image Caption 2',
+            w: 1200,
+            h: 900
+          }
+        ]
+      }
+    },
+    methods: {
+      handleClose () {
+        console.log('close event')
+      }
+    }
+  })
+
+  Vue.use(VuePreview)
+</script>
+</body>
+</html>

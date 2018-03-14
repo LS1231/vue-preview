@@ -2,7 +2,7 @@
   "name": "vue-preview",
   "version": "1.1.0",
   "description": "A Vue integration PhotoSwipe image preview plugin",
-  "main": "src/plugins/preview/index.js",
+  "main": "src/dist/vue-preview.js",
   "scripts": {
     "build": "webpack -p"
   },

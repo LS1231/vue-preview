@@ -2,45 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89ac01ff-17ba-4ceb-a826-b5c04e4de412" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/example/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/preview.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.npmignore" afterPath="$PROJECT_DIR$/.npmignore" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/build/build.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/dev-client.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/dev-server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.prod.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/dev.env.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/prod.env.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/test.env.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/preview/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/preview/preview.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/.gitkeep" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/custom-assertions/elementCount.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/nightwatch.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/runner.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/specs/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/unit/.eslintrc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/unit/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/unit/karma.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/unit/specs/Hello.spec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue-preview.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="vue-preview.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,13 +35,13 @@
         <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
@@ -81,6 +50,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +104,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/plugins/preview.js" />
         <option value="$PROJECT_DIR$/src/components/preview.vue" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/plugins/preview/VuePictureSwipe.vue" />
         <option value="$PROJECT_DIR$/src/plugins/preview/preview.vue" />
         <option value="$PROJECT_DIR$/src/plugins/preview/index.js" />
@@ -141,6 +119,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/.npmignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -254,12 +233,12 @@
       <workItem from="1477384174103" duration="2026000" />
       <workItem from="1477453274173" duration="720000" />
       <workItem from="1521017568592" duration="17620000" />
-      <workItem from="1521040393219" duration="1089000" />
+      <workItem from="1521040393219" duration="1713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66948000" />
+    <option name="totallyTimeSpent" value="67572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="23" width="1854" height="1177" extended-state="0" />
@@ -596,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -708,7 +680,7 @@
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -735,6 +707,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

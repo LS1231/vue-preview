@@ -7,7 +7,7 @@
 
 ## 完善的地方（Improvement）
 
-1、新增 @open（图片打开时）、@change（图片改变，即划到下一张或者上一张图片时）事件，并且返回当前图片编号(index) 
+1、新增 @open（图片打开时）、@change（图片改变，即划到下一张或者上一张图片时）事件，并且返回当前图片编号(index)
 
 2、新增 props[options]，组件全局引用，可以设置全局配置，也可以设置【私有配置】，组件的【私有配置】优先级高于全局 
 
@@ -17,7 +17,9 @@
 
 3、新增九宫格正方形图片布局，类似于微信九宫格那种
 
-4、使用方法的话，photoswipe 必须安装，然后把这整个repo放到你的目录里，我的repo名称是 vue-preview ，如下：
+4、打开和关闭图片的动画更加流畅，不会像之前那样点一下图片突然图片放大一下这种感觉
+
+5、使用方法的话，photoswipe 必须安装，然后把这整个repo放到你的目录里，我的repo名称是 vue-preview ，再然后替换掉photoswipe插件的css 	【photoswipe.css】，最后如下操作：
 ``` bash
     import VuePreview from '@/common/vue-preview/src/index'
     Vue.use(VuePreview, {
@@ -35,7 +37,7 @@
 
 也就是说在 main.js 中引入 vue-preview/src/index.js，这样就可以了
 
-5、不懂的看 squaredPhotos.vue 这个文件，这个文件也是【九宫格 demo】
+6、不懂的看 squaredPhotos.vue 这个文件，这个文件也是【九宫格 demo】
 
 ## Requirements
 

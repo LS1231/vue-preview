@@ -19,7 +19,7 @@
 
 4、打开和关闭图片的动画更加流畅，不会像之前那样点一下图片突然图片放大一下这种感觉
 
-5、使用方法的话，photoswipe 必须安装，然后把这整个repo放到你的目录里，我的repo名称是 vue-preview ，再然后替换掉photoswipe插件的css 	【photoswipe.css】，最后如下操作：
+5、使用方法的话，photoswipe 必须安装，然后把这整个repo放到你的目录里，我的repo名称是 vue-preview ，然后替换掉 photoswipe 插件的  photoswipe.css ，再如下操作：
 ``` bash
     import VuePreview from '@/common/vue-preview/src/index'
     Vue.use(VuePreview, {

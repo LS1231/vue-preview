@@ -15,7 +15,7 @@
 
     详细配置列表在这里：http://www.tzungtzu.com/web/article/detail/?mid=3&id=5
 
-3、新增九宫格正方形图片布局，类似于微信九宫格那种
+3、新增九宫格正方形图片布局，类似于微信九宫格那种，新增横排图（2018-11-29）
 
 4、打开和关闭图片的动画更加流畅，不会像之前那样点一下图片突然图片放大一下这种感觉
 
@@ -37,7 +37,7 @@
 
 也就是说在 main.js 中引入 vue-preview/src/index.js，这样就可以了
 
-6、不懂的看 squaredPhotos.vue 这个文件，这个文件也是【九宫格 demo】
+6、不懂的可以看 squaredPhotos.vue 或者 linePhotos.vue 文件
 
 ## Requirements
 

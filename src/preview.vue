@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <div class="my-gallery" :style="{display: layout}" itemscope itemtype="http://schema.org/ImageGallery">
       <template v-for="item in slides">
         <figure
           itemprop="associatedMedia"
@@ -53,7 +53,61 @@
   </div>
 </template>
 
-<style>
-  @import "~photoswipe/dist/photoswipe.css";
-  @import "~photoswipe/dist/default-skin/default-skin.css";
+<style lang="scss" >
+@import "~photoswipe/dist/photoswipe.css";
+@import "~photoswipe/dist/default-skin/default-skin.css";
+
+.my-gallery {
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+  $width: 32%;
+  figure {
+    display: inline-block !important;
+    margin: 0 !important;
+    margin-right: 1.5% !important;
+    width: $width;
+    height: 0;
+    padding-bottom: $width;
+    position: relative;
+    flex-shrink: 0;
+
+    a {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: absolute;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      position: absolute;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+.pswp{
+  
+}
+// .pswp__top-bar,
+// .pswp__bg,
+// .pswp__scroll-wrap,
+// .pswp__container,
+// .pswp__item,
+// .pswp__zoom-wrap{
+//   position:fixed !important;
+//   height: 100vh !important;
+// }
+
+// .pswp__caption{
+//   position:fixed !important;
+//   z-index: 9999999999;
+// }
+
 </style>

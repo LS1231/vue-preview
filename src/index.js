@@ -7,13 +7,16 @@ const VuePreview = {
     Vue.component('VuePreview', {
       data() {
         return {
-          show: false,
           nowPage: null,
           totalPage: null,
         }
       },
       mixins: [PreviewComponent],
       props: {
+        layout: {
+          type: String,
+          default: 'flex'
+        },
         slides: Array,
         options: {
           type: Object,
@@ -25,7 +28,7 @@ const VuePreview = {
       methods: {
         initPhotoSwipeFromDOM(gallerySelector) {
           this.totalPage = this.slides.length
-
+          
           const self = this
           // parse slide data (url, title, size ...) from DOM elements
           // (children of gallerySelector)
@@ -131,6 +134,10 @@ const VuePreview = {
             self.nowPage = index
             // 打开图片时事件
             self.$emit('open', self.nowPage)
+            // let wrap = document.querySelectorAll('.lg-preview-wrapper')[0]
+            // wrap.style.display = 'block'
+
+
             let pswpElement = document.querySelectorAll('.pswp')[0]
             let gallery
             let photoSwipeOptions
@@ -190,24 +197,39 @@ const VuePreview = {
             gallery = new PhotoSwipe(pswpElement, PhotoSwipeUIDefault, items, photoSwipeOptions)
             gallery.init()
 
-            let item2 = document.querySelectorAll('.pswp__item')[1]
+            let item = document.querySelectorAll('.pswp__item')
+
+            let item1 = item[0]
+            let item2 = item[1]
+            let item3 = item[2]
             // 准备关闭图片时事件
             gallery.listen('initialZoomOut', function () {
+              item1.style.transition = '333ms'
               item2.style.transition = '333ms'
+              item3.style.transition = '333ms'
+              item1.classList.add("opacity--none")
               item2.classList.add("opacity--none")
+              item3.classList.add("opacity--none")
               setTimeout(()=>{
+                item1.classList.remove('opacity--none')
                 item2.classList.remove('opacity--none')
+                item3.classList.remove('opacity--none')
               },333)
             })
 
             gallery.listen('initialZoomOutEnd', function () {
+              item1.classList.remove('opacity--none')
               item2.classList.remove('opacity--none')
+              item3.classList.remove('opacity--none')
               // item2.style.opacity = 1
             })
 
             // 改变图片时事件
             gallery.listen('beforeChange', function (i) {
+              item1.style.transition = 'none'
               item2.style.transition = 'none'
+              item3.style.transition = 'none'
+              
               self.nowPage += i
               if (self.nowPage === self.totalPage) {
                 self.nowPage = 0

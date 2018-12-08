@@ -56,4 +56,8 @@
 <style>
   @import "~photoswipe/dist/photoswipe.css";
   @import "~photoswipe/dist/default-skin/default-skin.css";
+
+  .opacity--none{
+    opacity: 0;
+  }
 </style>

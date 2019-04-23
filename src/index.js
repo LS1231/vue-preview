@@ -112,7 +112,8 @@ const VuePreview = {
             return params
           }
           const openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
-            let pswpElement = document.querySelectorAll('.pswp')[0]
+            let gid = (galleryElement.getAttribute('data-pswp-uid') - 1) || 0
+            let pswpElement = document.querySelectorAll('.pswp')[gid]
             let gallery
             let photoSwipeOptions
             let items
